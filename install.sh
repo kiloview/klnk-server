@@ -507,7 +507,7 @@ install() {
             echo "Since without 'avahi-daemon' service install on your system, NDI discovery features will be disabled."
             echo
         fi
-        echo "In addition, you also need to pay attention to checking your FIREWARE configuration, and at least ensure that the following ports are configured on the firewall to allow external access:"
+        echo "In addition, you also need to pay attention to checking your FIREWALL configuration, and at least ensure that the following ports are configured on the firewall to allow external access:"
         echo
         echo "* UDP ports: $klnk_port $stream_klnk_port"
         echo "* TCP ports: $web_port"
@@ -519,7 +519,7 @@ install() {
         echo "* TCP ports: [5961, 5962, ...(keep at least N ports open)]"
         echo "* TCP/UDP ports: 5960 [7960, 7961, ...(keep at least 4*N ports open)]"
         echo
-        echo "For other protocols such as RTSP,SRT,..., you also need to open the service port specified in the corresponding protocol."
+        echo "For other protocols such as RTSP,SRT,webrtc,..., you also need to open the service port range [30000, 30300] as specified in the corresponding protocol."
         echo
         echo "ENJOY IT!"
         echo
